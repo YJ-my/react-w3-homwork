@@ -38,11 +38,11 @@ function App() {
               {
                 day.map((a, i) => {
                 return (
-                  <>
+                  <div className='daybox'>
                     <span>{day[i].title}</span>
-                    <Rating name="read-only" value={value[i]} readOnly />
+                    <Rating className="star" name="read-only" size='large' value={value[i]} readOnly />
                     <div className='tri' onClick={()=>{history.push("/" + day[i].id)}}></div> 
-                  </>
+                  </div>
                   //
                   // <Score day={list} key={index}/>
                 );

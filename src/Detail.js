@@ -13,11 +13,12 @@ function Detail(props){
   
   return (
       <div>
-      <h2>{props.day[id].title}</h2>
+      <h2>{props.day[id].title}요일 평점 남기기</h2>
 
 
     <Rating
         name="simple-controlled"
+        size="large"
         value={value}
         onChange={(event, newValue) => {
             setValue(newValue);
