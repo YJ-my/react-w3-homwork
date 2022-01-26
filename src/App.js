@@ -35,6 +35,7 @@ function App() {
         <h1>일주일평가</h1>
         <div className='starBigBox'>
           <div className='starbox'>
+            {/* 월~금 별점, 삼각형 버튼 map으로 돌리기 */}
               {
                 day.map((a, i) => {
                 return (
@@ -43,8 +44,6 @@ function App() {
                     <Rating className="star" name="read-only" size='large' value={value[i]} readOnly />
                     <div className='tri' onClick={()=>{history.push("/" + day[i].id)}}></div> 
                   </div>
-                  //
-                  // <Score day={list} key={index}/>
                 );
               })
               }           
